@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+}
+
+.container {
+  position: relative;
+  padding: 1.2rem;
+}
+
+.is-barber {
+  background: url(../img/barbershop.jpg) no-repeat;
+  background-size: cover;
+}
+
+.is-everett {
+  background: #fff;
+}
+
+.has-text-orange {
+  color: #ff6b42;
+}
+
+.button.is-orange {
+  background: #ff6b42;
+  border: #ff6b42;
+}
+
+.button.is-orange:hover {
+  background: #ff5729;
+  border: #ff5729;
+}
+
+a {
+  color: #ff6b42;
+}
+a:hover {
+  color: #ff5729;
+}
+
+.cd-monogram {
+  padding: 0;
+  margin: 0px 0.5rem;
+  height: 20px;
+  width: auto;
+}
+
+footer {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 550px) {
+  footer {
+    font-size: 0.8rem;
+  }
+  .cd-monogram {
+    height: 15px;
+    width: auto;
+  }
+}
+
+@media (min-width: 1080px) {
+  .headshot {
+    display: none;
+  }
+
+  .is-everett {
+    background: url(../img/headshot-fullscreen.png);
+    background-size: cover;
+  }
+}
