@@ -7,57 +7,46 @@
 
 body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  font-size: 1.4rem;
+  font-size: 2rem;
 }
 
-.container {
-  position: relative;
-  padding: 1.2rem;
-}
-
-.is-barber {
-  background: url(../img/barbershop.jpg) no-repeat;
+.is-background {
+  background-image: url(../img/bg-2.png);
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
-.has-text-orange {
-  color: #ff6b42;
-}
-
-.button.is-orange {
-  background: #ff6b42;
-  border: #ff6b42;
-}
-
-.button.is-orange:hover {
-  background: #ff5729;
-  border: #ff5729;
+.has-text-green {
+  color: #295f2d;
 }
 
 a {
-  color: #ff6b42 !important;
+  color: #295f2d !important;
 }
 a:hover {
-  color: #ff5729 !important;
+  color: #439e49 !important;
 }
 
-.cd-monogram {
-  padding: 0;
-  margin: 0px 0.5rem;
-  height: 20px;
-  width: auto;
+@media (max-width: 1920px) {
+  body {
+    font-size: 1.4rem;
+  }
 }
 
-footer {
-  font-size: 1.2rem;
+@media (max-width: 1270px) {
+  .is-background {
+    background-image: url(../img/bg-3.png);
+  }
 }
 
-.active {
-  border-bottom: 1px solid grey;
+@media (max-width: 1030px) {
+  .is-background {
+    background-image: url(../img/bg-4.png);
+  }
 }
 
 @media (max-width: 550px) {
-  footer {
-    font-size: 0.8rem;
+  body {
+    font-size: 1.1rem;
   }
 }
